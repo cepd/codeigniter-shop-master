@@ -67,6 +67,13 @@
                                 ?>"><a href="<?php echo base_url('/customer/register'); ?>">Register</a> </li>
 
                 <?php } ?>
+                <br>
+                <div class="search_box">
+                    <form method="get" action="<?php echo base_url('search') ?>">
+                        <input type="text" placeholder="Search for Products" name="search">
+                        <input type="submit" value="SEARCH">
+                    </form>
+                </div>
 
             </ul>
             <div class="clear"></div>
@@ -74,36 +81,36 @@
                 <div class="logo" style="width: 4rem;">
                     <!--     <a href="<?php echo base_url('/'); ?>"><img src="<?php echo base_url('uploads/'); ?><?php echo get_option('site_logo'); ?>" alt="" /></a> -->
                 </div>
-                <div class="header_top_right">
+                <!--<div class="header_top_right">
                     <div class="search_box">
                         <form method="get" action="<?php echo base_url('search') ?>">
                             <input type="text" placeholder="Search for Products" name="search">
                             <input type="submit" value="SEARCH">
                         </form>
+                    </div> -->
+                <div class="shopping_cart">
+                    <div class="cart">
+                        <a href="<?php echo base_url('cart'); ?>" title="View my shopping cart" rel="nofollow">
+                            <span class="cart_title">Cart</span>
+                            <span class="no_product">(<?php echo $this->cart->total_items(); ?> Items)</span>
+                        </a>
                     </div>
-                    <div class="shopping_cart">
-                        <div class="cart">
-                            <a href="<?php echo base_url('cart'); ?>" title="View my shopping cart" rel="nofollow">
-                                <span class="cart_title">Cart</span>
-                                <span class="no_product">(<?php echo $this->cart->total_items(); ?> Items)</span>
-                            </a>
-                        </div>
-                    </div>
-                    <?php
-                    $customer_id = $this->session->userdata('customer_id');
-                    if ($customer_id) {
-                    ?>
-                        <div class="login"><a href="<?php echo base_url('/customer/logout'); ?>">Logout</a></div>
-                    <?php } else {
-                    ?>
-                        <!--<div class="login"><a href="<?php echo base_url('/customer/login'); ?>">login</a></div>-->
-
-                    <?php
-                    }
-                    ?>
-                    <div class="clear"></div>
                 </div>
+                <?php
+                $customer_id = $this->session->userdata('customer_id');
+                if ($customer_id) {
+                ?>
+                    <div class="login"><a href="<?php echo base_url('/customer/logout'); ?>">Logout</a></div>
+                <?php } else {
+                ?>
+                    <!--<div class="login"><a href="<?php echo base_url('/customer/login'); ?>">login</a></div>-->
+
+                <?php
+                }
+                ?>
                 <div class="clear"></div>
             </div>
-
+            <div class="clear"></div>
         </div>
+
+    </div>
