@@ -173,12 +173,11 @@ body {
 	background: url(../images/body_bg3.jpg);
 }
 .wrap {
-	width: 100%;
+	width: 98%;
 	margin: 0 auto;
 	padding: 0 1%;
 	background: #fff;
 }
-
 .header {
 	background: #fff;
 }
@@ -193,15 +192,15 @@ body {
 /**** Header Top Right ****/
 .header_top_right {
 	float: left;
-	width: 47%;
+	width: 67%;
 	margin-top: 35px;
 }
 .search_box {
 	float: right;
 	border: 1px solid #dbdbdb;
+	margin-right: 5px;
 	position: relative;
 	width: 47%;
-	margin-right: 2cm;
 }
 .search_box input[type="text"] {
 	width: 74%;
@@ -242,7 +241,6 @@ body {
 	right: 0;
 	top: 0;
 }
-
 .search_box input[type="submit"]:hover {
 	background: #444;
 }
@@ -796,11 +794,11 @@ button.grey:hover,
 .grid_1_of_4 {
 	display: block;
 	float: left;
-	margin: 1% 0 1% 1.6%;
+	margin: 1% 0 1% 1%;
 	box-shadow: 0px 0px 3px rgb(150, 150, 150);
 }
 .grid_1_of_4:first-child {
-	margin-left: 0;
+	margin-left: 2;
 }
 .images_1_of_4 {
 	width: 20.8%;
