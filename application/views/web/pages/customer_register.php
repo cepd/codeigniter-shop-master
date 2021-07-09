@@ -44,11 +44,14 @@
                                 
                                 <div>
                                     <select id="country" name="customer_country" class="frm-field required">
-                                        <option value="null">Select a Country</option>         
-                                        <option value="Afghanistan">Afghanistan</option>
-                                        <option value="Bangladesh">Bangladesh</option>
-                                        <option value="Pakistan">Pakistan</option>
-                                        <option value="India">India</option>
+                                        <option value="null">Select a Province</option>         
+                                        <option value="Afghanistan">Jawa Timur</option>
+                                        <option value="Bangladesh">Bali</option>
+                                        <option value="Pakistan">NTT</option>
+                                        <option value="India">DKI Jakarta</option>
+                                        <option value="India">Jawa Tengah</option>
+                                        <option value="India">Jawa Barat</option>
+                                        <option value="India">Banten</option>
 
                                     </select>
                                 </div>		

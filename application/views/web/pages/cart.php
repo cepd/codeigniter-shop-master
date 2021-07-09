@@ -51,7 +51,7 @@
                             <td>Rp <?php echo $this->cart->format_number($this->cart->total()) ?></td>
                         </tr>
                         <tr>
-                            <th>VAT : </th>
+                            <th>Tax : </th>
                             <td>Rp 
                                 <?php
                                 $total = $this->cart->total();
